@@ -1,0 +1,28 @@
+{
+  "name": "openqa-playwright-bdd-project",
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "bddgen": "bddgen",
+    "test": "npm run bddgen && playwright test",
+    "test:ui": "npm run bddgen && playwright test --ui",
+    "test:headed": "npm run bddgen && playwright test --headed",
+    "test:report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "@playwright/test": "^1.64.0",
+    "@types/node": "^24.19.2",
+    "openqa": "^0.0.10",
+    "playwright-bdd": "^9.2.1",
+    "typescript": "^5.9.3",
+    "varlock": "^1.22.0"
+  },
+  "dependencies": {
+    "@opencode-ai/sdk": "^1.18.35",
+    "opencode-ai": "1.18.35"
+  }
+}
